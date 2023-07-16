@@ -152,7 +152,19 @@ nav .ul2 li a {
 .content .image .team {
     margin-top: 54px;
     margin-left: 238px;
+    position: relative;
+    z-index: 80;
+    border-radius: 24px;
 
+}
+.content .image .circleyellow{
+    position: absolute;
+    left:15%;
+}
+.content .image .waveblue{
+    position: absolute;
+    top: 130%;
+    right: 17%;
 }
 
 /*need to add yellowarc and blue waves*/
