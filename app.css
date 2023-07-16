@@ -89,7 +89,6 @@ nav.scrolled {
     border-radius: 0 0 8px 8px;
 }
 .logo {
-margin-left: 88px;
     width: 94.182px;
     height: 32px;
     margin-top: 20px;
@@ -167,7 +166,8 @@ nav .ul2 li a {
 
 .content .image .circleyellow {
     position: absolute;
-    left: 15%;
+    left: 16%;
+    top: 65%;
 }
 
 .content .image .waveblue {
