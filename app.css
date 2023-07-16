@@ -312,6 +312,7 @@ nav .ul2 li a {
 .contactinfo ul li ul {
     display: flex;
     gap: 5px;
+    padding-inline-start: 0;
 }
 
 .flexside {
