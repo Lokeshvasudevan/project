@@ -8,7 +8,6 @@ body {
     margin: 0;
     font-family: "poppins", sans-serif;
 }
-
 .wrapper {
     max-width: 1440px;
     margin: 0 auto;
@@ -67,6 +66,7 @@ body {
 
 /*header*/
 header {
+    
     height: 100vh;
     width: 100%;
     background: #2A3342;
@@ -75,15 +75,21 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
-
     width: 1440px;
     top: 36px;
     z-index: 100;
     background-color: #2A3342;
-
+    position: fixed;
 }
-
+nav.scrolled {
+    top: 0;
+    padding: 12px;
+    background: #2A3342;
+    box-shadow: 0 16px 14px -8px rgb(0, 0, 0,0.3);
+    border-radius: 0 0 8px 8px;
+}
 .logo {
+margin-left: 88px;
     width: 94.182px;
     height: 32px;
     margin-top: 20px;
@@ -110,6 +116,7 @@ nav .ul2 .btn {
 
 nav .ul1 li a,
 nav .ul2 li a {
+    
     color: var(--gray-300, #BBC3CF);
     font-size: 16px;
     font-weight: 500;
@@ -118,8 +125,8 @@ nav .ul2 li a {
 
 /*content*/
 .content {
-
-    height: 100vh;
+    
+    height: 120vh;
     width: 100%;
     justify-content: space-between;
 }
@@ -157,22 +164,23 @@ nav .ul2 li a {
     border-radius: 24px;
 
 }
-.content .image .circleyellow{
+
+.content .image .circleyellow {
     position: absolute;
-    left:15%;
-}
-.content .image .waveblue{
-    position: absolute;
-    top: 130%;
-    right: 17%;
+    left: 15%;
 }
 
-/*need to add yellowarc and blue waves*/
+.content .image .waveblue {
+    position: absolute;
+    top: 138.5%;
+    right: 17%;
+}
 .companies p {
-    margin-top: 550px;
+    margin-top: 450px;
     text-align: center;
     color: var(--gray-300, #BBC3CF);
     font-size: 16px;
+    margin-bottom: 30px;
 }
 
 .companies ul {
@@ -216,7 +224,10 @@ nav .ul2 li a {
 
 .numbers .flex .right {
     margin-left: 100px;
+}
 
+.numbers .left ul li h4 {
+    margin-left: 30%;
 }
 
 .quote .wrapper {
@@ -225,6 +236,7 @@ nav .ul2 li a {
 
 .quote .left-men {
     margin-left: 150px;
+    margin-bottom: 80px;
 }
 
 .quote .right-quote {
@@ -235,120 +247,146 @@ nav .ul2 li a {
     color: var(--gray-900, #2A3342);
     font-size: 30px;
 }
-.quote .right-quote h3{
+
+.quote .right-quote h3 {
     color: var(--gray-800, #333F51);
-font-size: 20px;
-margin-bottom: 0px;
+    font-size: 20px;
+    margin-bottom: 0px;
 }
-.quote .right-quote p{
-    font-size:16px;
+
+.quote .right-quote p {
+    font-size: 16px;
     color: gray;
 }
-.quote .right-quote .quote2{
+
+.quote .right-quote .quote2 {
     margin-left: 300px;
 
 }
+
 .con {
     margin-left: 135px;
     display: flex;
 }
-.con .left h2{
+
+.con .left h2 {
     color: var(--gray-900, #2A3342);
-font-size: 43px;
+    font-size: 43px;
 }
-.con .left p{
+
+.con .left p {
     margin-top: 0px;
     color: var(--gray-500, #556987);
-font-size: 18px;
+    font-size: 18px;
+    margin-right: 105px;
+    margin-bottom: 60px;
 }
-.con .right a{
+
+.con .right a {
     text-decoration: none;
     margin-top: 90px;
-    margin-left: 100px;
+    margin-left: 16px;
 }
-.con .right .btn{
-color: white;
+
+.con .right .btn {
+    color: white;
 }
-.con .right .btn_white{
+
+.con .right .btn_white {
     color: #333F51;
 }
-.contactinfo{
+
+.contactinfo {
     margin-left: 90px;
     display: flex;
 }
-.contactinfo ul{
+
+.contactinfo ul {
     list-style: none;
 }
-.contactinfo ul p{
+
+.contactinfo ul p {
     color: #556987;
 }
-.contactinfo ul li ul{
-    margin-right: 200px;
+
+.contactinfo ul li ul {
     display: flex;
     gap: 5px;
 }
-.flexside{
+
+.flexside {
     display: flex;
 }
-.mailinfo{
+
+.mailinfo {
+    margin-left: 200px;
     width: 554px;
-height: 410px;
-flex-shrink: 0;
+    height: 410px;
+    flex-shrink: 0;
     border-radius: 6px;
-background: var(--gray-050, #F7F8F9);
+    background: var(--gray-050, #F7F8F9);
 }
-.mailinfo label{
+
+.mailinfo label {
     margin-left: 30px;
     color: var(--gray-800, #333F51);
-font-size: 16px;
+    font-size: 16px;
 }
-.mailinfo input{
+
+.mailinfo input {
     margin-left: 30px;
     display: flex;
-width: 474px;
-height: 46px;
-padding: 10px 14px;
-align-items: center;
-gap: 8px;
+    width: 474px;
+    height: 46px;
+    padding: 10px 14px;
+    align-items: center;
+    gap: 8px;
     color: var(--gray-500, #667085);
-font-size: 16px;
+    font-size: 16px;
 }
-.mailinfo textarea{
+
+.mailinfo textarea {
     display: flex;
     margin-left: 30px;
-width: 474px;
-height: 220px;
-padding: 10px 14px;
-align-items: flex-start;
-gap: 8px;
-color: var(--gray-200, #D5DAE1);
-font-size: 16px;
+    width: 474px;
+    height: 220px;
+    padding: 10px 14px;
+    align-items: flex-start;
+    gap: 8px;
+    color: var(--gray-200, #D5DAE1);
+    font-size: 16px;
 }
-.mailinfo a{
+
+.mailinfo a {
     text-decoration: none;
     margin-left: 30px;
     color: white;
     margin-top: 15px;
 }
-footer{
+
+footer {
     background: #2A3342;
 }
-footer img{
-margin-top: 88px;
-margin-left: 45%;
+
+footer img {
+    margin-top: 88px;
+    margin-left: 45%;
 }
-footer ul{
+
+footer ul {
     margin-left: 270px;
     display: flex;
     gap: 48px;
     list-style: none;
 }
-footer ul a{
+
+footer ul a {
     text-decoration: none;
     color: #8896AB;
     margin-left: 10px;
 }
-footer p{
+
+footer p {
     margin-top: 60px;
     text-align: center;
     color: #8896AB;
